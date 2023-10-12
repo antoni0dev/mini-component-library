@@ -29,7 +29,7 @@ const Icon = ({ id, size, strokeWidth = 1, ...delegated }) => {
       }}
       {...delegated}
     >
-      <Component color="currentColor" size={size} />
+      <Component color='currentColor' size={size} />
     </Wrapper>
   );
 };
@@ -37,7 +37,7 @@ const Icon = ({ id, size, strokeWidth = 1, ...delegated }) => {
 const Wrapper = styled.div`
   width: var(--size);
   height: var(--size);
-
+  position: absolute;
   /*
     OMG I'm doing that thing I've warned against doing!
     Unfortunately, react-feather doesn't make it possible to pass
